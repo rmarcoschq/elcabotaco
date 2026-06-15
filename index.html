@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="El Cabo Taco – Cevichería & Seafood en Puerto Peñasco, Sonora. Los mejores mariscos, ceviches y tacos de mariscos del Mar de Cortés." />
+  <title>El Cabo Taco – Cevichería & Seafood | Puerto Peñasco</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<body>
+
+  <!-- ═══════════════════ NAV ═══════════════════ -->
+  <header class="site-header" id="top">
+    <nav class="navbar">
+      <a href="#top" class="nav-logo">
+        <img src="images/logo.png" alt="El Cabo Taco Logo" />
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
+        <li><a href="#platillos" data-i18n="nav.dishes">Platillos</a></li>
+        <li><a href="#menu" data-i18n="nav.menu">Menú</a></li>
+        <li><a href="#galeria" data-i18n="nav.gallery">Galería</a></li>
+        <li><a href="#ubicacion" data-i18n="nav.location">Ubicación</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+        <li>
+          <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+            <span class="lang-es">🇲🇽 ES</span>
+            <span class="lang-en">🇺🇸 EN</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="inicio">
+    <!-- Animated waves -->
+    <div class="wave-container">
+      <svg class="wave wave1" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="rgba(30,111,182,0.4)"/>
+      </svg>
+      <svg class="wave wave2" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,80 C480,20 960,120 1440,40 L1440,120 L0,120 Z" fill="rgba(10,36,99,0.5)"/>
+      </svg>
+      <svg class="wave wave3" viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,40 C720,100 720,20 1440,80 L1440,120 L0,120 Z" fill="rgba(79,170,215,0.3)"/>
+      </svg>
+    </div>
+
+    <!-- Bubbles -->
+    <div class="bubbles" aria-hidden="true">
+      <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
+      <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
+      <span class="bubble"></span><span class="bubble"></span>
+    </div>
+
+    <div class="hero-content">
+      <img src="images/logo.png" alt="El Cabo Taco" class="hero-logo" />
+      <h1 class="hero-title">
+        <span data-i18n="hero.line1">El Sabor del</span><br/>
+        <span class="accent-red" data-i18n="hero.line2">Mar de Cortés</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero.sub">
+        Ceviches, Mariscos & Tacos en Puerto Peñasco
+      </p>
+      <div class="hero-ctas">
+        <a href="#menu" class="btn btn-primary" data-i18n="hero.cta1">Ver Menú</a>
+        <a href="#ubicacion" class="btn btn-outline" data-i18n="hero.cta2">Cómo Llegar</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-indicator"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ NOSOTROS ═══════════════════ -->
+  <section class="about section-dark" id="nosotros">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-photo-stack">
+          <div class="photo-frame main-photo">
+            <img src="images/restaurant-group.png" alt="Familia en El Cabo Taco" loading="lazy" />
+          </div>
+          <div class="photo-badge">
+            <span class="badge-icon">🦞</span>
+            <span class="badge-text" data-i18n="about.badge">Familia<br/>Peñasquera</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="eyebrow" data-i18n="about.eyebrow">Nuestra Historia</span>
+          <h2 data-i18n="about.title">Un Rincón con Sabor a Mar</h2>
+          <p data-i18n="about.p1">
+            Nacidos y criados en Puerto Peñasco, somos un negocio familiar con raíces profundas en el Mar de Cortés. Cada platillo que servimos cuenta la historia de nuestros pescadores locales y la riqueza de nuestros mares.
+          </p>
+          <p data-i18n="about.p2">
+            Más que un restaurante, somos un lugar de encuentro donde familias, amigos y viajeros comparten momentos inolvidables rodeados de sabor, risas y el ambiente único de nuestra cevichería.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label" data-i18n="about.stat1">Mariscos Frescos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">🌊</span>
+              <span class="stat-label" data-i18n="about.stat2">Mar de Cortés</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">❤️</span>
+              <span class="stat-label" data-i18n="about.stat3">Hecho con Amor</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PLATILLOS DESTACADOS ═══════════════════ -->
+  <section class="dishes" id="platillos">
+    <div class="container">
+      <span class="eyebrow" data-i18n="dishes.eyebrow">Lo Mejor de la Casa</span>
+      <h2 data-i18n="dishes.title">Platillos que te van a Antojar</h2>
+    </div>
+
+    <div class="dishes-slider">
+      <div class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="images/food-aguachile.png" alt="Aguachile de Atún" loading="lazy" />
+          <div class="dish-overlay">
+            <span class="dish-tag" data-i18n="dishes.specialty">⭐ Especialidad</span>
+          </div>
+        </div>
+        <div class="dish-info">
+          <h3 data-i18n="dishes.tuna.name">Atún Cabo</h3>
+          <p data-i18n="dishes.tuna.desc">Atún fresco con aguachile negro, aguacate, mango y jalapeño. Un explosión de sabores del Pacífico.</p>
+          <span class="dish-price">$245</span>
+        </div>
+      </div>
+
+      <div class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="images/food-ceviche.png" alt="Ceviche Mixto" loading="lazy" />
+          <div class="dish-overlay">
+            <span class="dish-tag" data-i18n="dishes.popular">🔥 Popular</span>
+          </div>
+        </div>
+        <div class="dish-info">
+          <h3 data-i18n="dishes.ceviche.name">Ceviche Mixto</h3>
+          <p data-i18n="dishes.ceviche.desc">Camarón, pulpo y callo en salsa bandera con pepino, cilantro y el toque frutal del mango.</p>
+          <span class="dish-price">$230</span>
+        </div>
+      </div>
+
+      <div class="dish-card">
+        <div class="dish-img-wrap">
+          <img src="images/food-coctel.png" alt="Cóctel de Camarón" loading="lazy" />
+          <div class="dish-overlay">
+            <span class="dish-tag" data-i18n="dishes.classic">🦐 Clásico</span>
+          </div>
+        </div>
+        <div class="dish-info">
+          <h3 data-i18n="dishes.coctel.name">Cóctel de Camarón</h3>
+          <p data-i18n="dishes.coctel.desc">Camarón cocido en salsa bandera con clamato, pepino, aguacate y un toque de limón. ¡Inigualable!</p>
+          <span class="dish-price">$140 – $180</span>
+        </div>
+      </div>
+
+      <!-- Placeholder card -->
+      <div class="dish-card">
+        <div class="dish-img-wrap placeholder-img">
+          <div class="placeholder-content">
+            <span>🌮</span>
+            <p data-i18n="dishes.placeholder">Foto próximamente</p>
+          </div>
+          <div class="dish-overlay">
+            <span class="dish-tag" data-i18n="dishes.bestseller">🏆 #1 Ventas</span>
+          </div>
+        </div>
+        <div class="dish-info">
+          <h3 data-i18n="dishes.gobernador.name">Taco Gobernador</h3>
+          <p data-i18n="dishes.gobernador.desc">Camarón al gusto con salsa bandera, queso gratinado y aguacate. El rey de los tacos de mariscos.</p>
+          <span class="dish-price">$75</span>
+        </div>
+      </div>
+
+      <!-- Placeholder card 2 -->
+      <div class="dish-card">
+        <div class="dish-img-wrap placeholder-img">
+          <div class="placeholder-content">
+            <span>🐙</span>
+            <p data-i18n="dishes.placeholder">Foto próximamente</p>
+          </div>
+          <div class="dish-overlay">
+            <span class="dish-tag" data-i18n="dishes.specialty">⭐ Especialidad</span>
+          </div>
+        </div>
+        <div class="dish-info">
+          <h3 data-i18n="dishes.pulpo.name">Pulpo Cabo</h3>
+          <p data-i18n="dishes.pulpo.desc">Pulpo a la mantequilla con ajo, servido con guarnición. Una experiencia única de Mar de Cortés.</p>
+          <span class="dish-price">$495</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-dots" id="sliderDots"></div>
+  </section>
+
+  <!-- ═══════════════════ MENÚ ═══════════════════ -->
+  <section class="menu-section section-dark" id="menu">
+    <div class="container">
+      <span class="eyebrow" data-i18n="menu.eyebrow">Carta Completa</span>
+      <h2 data-i18n="menu.title">Nuestro Menú</h2>
+      <p class="section-sub" data-i18n="menu.sub">Toca para ampliar y explorar todos nuestros platillos</p>
+
+      <div class="menu-lang-tabs">
+        <button class="menu-tab active" data-menu="es" data-i18n="menu.spanish">🇲🇽 Español</button>
+        <button class="menu-tab" data-menu="en" data-i18n="menu.english">🇺🇸 English</button>
+      </div>
+
+      <!-- Spanish menu -->
+      <div class="menu-pages" id="menuEs">
+        <div class="menu-page-card" onclick="openLightbox('images/menu-es-front.png', 'Menú El Cabo Taco – Frente')">
+          <img src="images/menu-es-front.png" alt="Menú Español – Frente" loading="lazy" />
+          <div class="menu-page-overlay">
+            <span>🔍 <span data-i18n="menu.expand">Ampliar</span></span>
+          </div>
+        </div>
+        <div class="menu-page-card" onclick="openLightbox('images/menu-es-back.png', 'Menú El Cabo Taco – Reverso')">
+          <img src="images/menu-es-back.png" alt="Menú Español – Reverso" loading="lazy" />
+          <div class="menu-page-overlay">
+            <span>🔍 <span data-i18n="menu.expand">Ampliar</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- English menu -->
+      <div class="menu-pages hidden" id="menuEn">
+        <div class="menu-page-card" onclick="openLightbox('images/menu-en-front.png', 'El Cabo Taco Menu – Front')">
+          <img src="images/menu-en-front.png" alt="English Menu – Front" loading="lazy" />
+          <div class="menu-page-overlay">
+            <span>🔍 <span data-i18n="menu.expand">Ampliar</span></span>
+          </div>
+        </div>
+        <div class="menu-page-card" onclick="openLightbox('images/menu-en-back.png', 'El Cabo Taco Menu – Back')">
+          <img src="images/menu-en-back.png" alt="English Menu – Back" loading="lazy" />
+          <div class="menu-page-overlay">
+            <span>🔍 <span data-i18n="menu.expand">Ampliar</span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar">✕</button>
+        <img id="lightboxImg" src="" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ GALERÍA ═══════════════════ -->
+  <section class="gallery" id="galeria">
+    <div class="container">
+      <span class="eyebrow" data-i18n="gallery.eyebrow">Momentos Memorables</span>
+      <h2 data-i18n="gallery.title">Vive la Experiencia</h2>
+    </div>
+
+    <div class="gallery-mosaic">
+      <div class="gallery-item large" onclick="openLightbox('images/restaurant-group.png', 'El Cabo Taco – Familia y Amigos')">
+        <img src="images/restaurant-group.png" alt="Clientes en El Cabo Taco" loading="lazy" />
+        <div class="gallery-overlay">
+          <span data-i18n="gallery.friends">¡Momentos en Familia!</span>
+        </div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/food-aguachile.png', 'Atún Cabo')">
+        <img src="images/food-aguachile.png" alt="Atún Cabo" loading="lazy" />
+        <div class="gallery-overlay"><span>Atún Cabo</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/food-ceviche.png', 'Ceviche Mixto')">
+        <img src="images/food-ceviche.png" alt="Ceviche Mixto" loading="lazy" />
+        <div class="gallery-overlay"><span>Ceviche Mixto</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('images/food-coctel.png', 'Cóctel de Camarón')">
+        <img src="images/food-coctel.png" alt="Cóctel de Camarón" loading="lazy" />
+        <div class="gallery-overlay"><span>Cóctel de Camarón</span></div>
+      </div>
+      <!-- Placeholders para más fotos -->
+      <div class="gallery-item placeholder-gallery">
+        <div class="placeholder-gallery-inner">
+          <span>📸</span>
+          <p data-i18n="gallery.placeholder">Tu foto aquí</p>
+        </div>
+      </div>
+      <div class="gallery-item placeholder-gallery">
+        <div class="placeholder-gallery-inner">
+          <span>📸</span>
+          <p data-i18n="gallery.placeholder">Tu foto aquí</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="social-bar">
+      <p data-i18n="gallery.social">¡Síguenos y comparte tu experiencia!</p>
+      <div class="social-links">
+        <a href="https://www.facebook.com/p/El-Cabo-Taco-61551436047336/" target="_blank" rel="noopener" class="social-btn facebook">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a href="https://www.instagram.com/el_cabo_taco/" target="_blank" rel="noopener" class="social-btn instagram">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram
+        </a>
+        <a href="https://wa.me/52XXXXXXXXXX" target="_blank" rel="noopener" class="social-btn whatsapp">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ UBICACIÓN ═══════════════════ -->
+  <section class="location section-dark" id="ubicacion">
+    <div class="container">
+      <span class="eyebrow" data-i18n="location.eyebrow">¿Dónde Estamos?</span>
+      <h2 data-i18n="location.title">Encuéntranos en Puerto Peñasco</h2>
+
+      <div class="location-grid">
+        <div class="location-info">
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div>
+              <h4 data-i18n="location.address.label">Dirección</h4>
+              <p data-i18n="location.address.text">Puerto Peñasco, Sonora, México</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🕐</div>
+            <div>
+              <h4 data-i18n="location.hours.label">Horario</h4>
+              <p data-i18n="location.hours.text">Lunes – Domingo<br/>10:00 AM – 8:00 PM</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📞</div>
+            <div>
+              <h4 data-i18n="location.phone.label">Teléfono / WhatsApp</h4>
+              <p><a href="https://wa.me/52XXXXXXXXXX" class="contact-link">+52 (638) XXX-XXXX</a></p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🌐</div>
+            <div>
+              <h4 data-i18n="location.social.label">Redes Sociales</h4>
+              <p><a href="https://www.facebook.com/p/El-Cabo-Taco-61551436047336/" class="contact-link" target="_blank">@ElCaboTaco</a></p>
+            </div>
+          </div>
+
+          <a href="https://www.google.com/maps/search/El+Cabo+Taco+Puerto+Pe%C3%B1asco" target="_blank" rel="noopener" class="btn btn-primary directions-btn" data-i18n="location.directions">
+            🗺️ Cómo Llegar
+          </a>
+        </div>
+
+        <div class="map-container">
+          <div class="map-frame">
+            <!-- Embedded Google Map for El Cabo Taco Puerto Peñasco -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.2!2d-113.5359!3d31.3009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86cdf9d9ebff8e9d%3A0x0!2sEl%20Cabo%20Taco%2C%20Puerto%20Pe%C3%B1asco!5e0!3m2!1ses!2smx!4v1234567890"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación El Cabo Taco">
+            </iframe>
+          </div>
+          <div class="map-note">
+            <a href="https://www.google.com/maps/search/El+Cabo+Taco+Puerto+Peñasco+Sonora" target="_blank" rel="noopener" data-i18n="location.openMaps">Abrir en Google Maps ↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACTO ═══════════════════ -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <span class="eyebrow" data-i18n="contact.eyebrow">Escríbenos</span>
+      <h2 data-i18n="contact.title">¿Tienes Alguna Pregunta?</h2>
+      <p class="section-sub" data-i18n="contact.sub">Con gusto te atendemos por WhatsApp o redes sociales</p>
+
+      <div class="contact-actions">
+        <a href="https://wa.me/52XXXXXXXXXX?text=Hola%20El%20Cabo%20Taco,%20me%20gustaría%20más%20información" class="btn btn-whatsapp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span data-i18n="contact.whatsapp">Escríbenos por WhatsApp</span>
+        </a>
+
+        <a href="https://www.facebook.com/p/El-Cabo-Taco-61551436047336/" class="btn btn-facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          <span data-i18n="contact.facebook">Mensaje en Facebook</span>
+        </a>
+
+        <a href="https://www.instagram.com/el_cabo_taco/" class="btn btn-instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <span data-i18n="contact.instagram">Síguenos en Instagram</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-wave">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z" fill="var(--blue-mid)"/>
+      </svg>
+    </div>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="El Cabo Taco" />
+        <p class="footer-tagline" data-i18n="footer.tagline">Cevichería & Seafood<br/>Puerto Peñasco, Sonora</p>
+      </div>
+      <div class="footer-links">
+        <a href="#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+        <a href="#platillos" data-i18n="nav.dishes">Platillos</a>
+        <a href="#menu" data-i18n="nav.menu">Menú</a>
+        <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+        <a href="#ubicacion" data-i18n="nav.location">Ubicación</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/p/El-Cabo-Taco-61551436047336/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" width="24"><path fill="currentColor" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/el_cabo_taco/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="24"><path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://wa.me/52XXXXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" width="24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 El Cabo Taco – Cevichería & Seafood. Puerto Peñasco, Sonora.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a href="https://wa.me/52XXXXXXXXXX?text=Hola%20El%20Cabo%20Taco!" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" width="32" height="32"><path fill="white" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">⬆</button>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
